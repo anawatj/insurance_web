@@ -1,0 +1,82 @@
+<!-- app/views/index.phtml -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deves Insurance Co.Ltd</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+        <link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/angular/angular.min.js"></script>
+      <script type="text/javascript" src="../js/uibootstrap/ui-bootstrap-tpls-0.13.4.min.js"></script>
+        <script type="text/javascript" src="http://cdn.kendostatic.com/2014.1.416/js/kendo.all.min.js"></script>
+        <script type="text/javascript" src="http://kendo-labs.github.io/angular-kendo/angular-kendo.js"></script>
+       <script type="text/javascript" src="../js/views/app.js"></script>
+       <script type="text/javascript" src="../js/views/motor/main.js"></script>
+       <script type="text/javascript" src="../js/views/motor/modal.js"></script>
+    </head>
+    <body ng-app="deves" >
+        <div class="container">
+            <div id="header">
+                <img src="../img/header.jpg" style="width:100%;height:100px"/>
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Menu</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Motor
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=1">Type 1</a></li>
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=2">Type 2</a></li>
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=2+">Type 2+</a></li>
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=3">Type 3</a></li> 
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=3+">Type 3+</a></li>
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=3++">Type 3++</a></li>
+                                    <li><a href="http://localhost:8686/deves/motor/index?type=prb">Prb</a></li>
+                                    <li><a href="#">Garage</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Non Motor
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Fire</a></li>
+                                    <li><a href="#">Marine</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Claim
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Claim Motor</a></li>
+                                    <li><a href="#">Claim Non Motor</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="#">News</a></li> 
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Company Profile</a></li>
+                                    <li><a href="#">Summary</a></li>
+                                    <li><a href="#">Career</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron" style="height:700px">
+                <?php echo $this->getContent(); ?>
+            </div>
+            <div class="text-center">
+                Deves Insurance Co.Ltd 
+            </div>
+        </div>
+    </body>
+</html>
