@@ -10,12 +10,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../js/angular/angular.min.js"></script>
-      <script type="text/javascript" src="../js/uibootstrap/ui-bootstrap-tpls-0.13.4.min.js"></script>
+        <script type="text/javascript" src="../js/uibootstrap/ui-bootstrap-tpls-0.13.4.min.js"></script>
         <script type="text/javascript" src="http://cdn.kendostatic.com/2014.1.416/js/kendo.all.min.js"></script>
         <script type="text/javascript" src="http://kendo-labs.github.io/angular-kendo/angular-kendo.js"></script>
-       <script type="text/javascript" src="../js/views/app.js"></script>
-       <script type="text/javascript" src="../js/views/motor/main.js"></script>
-       <script type="text/javascript" src="../js/views/motor/modal.js"></script>
+        <script type="text/javascript" src="../js/views/app.js"></script>
+        <script type="text/javascript" src="../js/views/motor/main.js"></script>
+        <script type="text/javascript" src="../js/views/motor/modal.js"></script>
     </head>
     <body ng-app="deves" >
         <div class="container">
@@ -23,11 +23,18 @@
                 <img src="../img/header.jpg" style="width:100%;height:100px"/>
             </div>
             <nav class="navbar navbar-default">
+                 
                 <div class="container-fluid">
-                    <div class="navbar-header">
+                   <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <a class="navbar-brand" href="#">Menu</a>
                     </div>
-                    <div>
+                    <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li class="dropdown">
